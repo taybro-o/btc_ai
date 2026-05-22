@@ -1,4 +1,5 @@
-{
+import json
+nb = {
  "cells": [
   {
    "cell_type": "code",
@@ -19,7 +20,7 @@
     "    print(\"Running locally. Skipping Colab setup.\")"
    ],
    "outputs": [],
-   "execution_count": null
+   "execution_count": None
   },
   {
    "cell_type": "markdown",
@@ -148,7 +149,7 @@
    ],
    "id": "ed68049b75634ae5",
    "outputs": [],
-   "execution_count": null
+   "execution_count": None
   },
   {
    "cell_type": "code",
@@ -221,7 +222,7 @@
    ],
    "id": "9d06f5031303334d",
    "outputs": [],
-   "execution_count": null
+   "execution_count": None
   },
   {
    "cell_type": "code",
@@ -241,20 +242,15 @@
    ],
    "id": "8e9a7531a02b82a3",
    "outputs": [],
-   "execution_count": null
+   "execution_count": None
   }
  ],
  "metadata": {
-  "kernelspec": {
-   "display_name": "Python 3",
-   "language": "python",
-   "name": "python3"
-  },
-  "language_info": {
-   "name": "python",
-   "version": "3.12"
-  }
+  "kernelspec": { "display_name": "Python 3", "language": "python", "name": "python3" },
+  "language_info": { "name": "python", "version": "3.12" }
  },
  "nbformat": 4,
  "nbformat_minor": 5
 }
+with open('BTC_Master.ipynb', 'w') as f:
+    json.dump(nb, f, indent=1)
